@@ -19,7 +19,7 @@ public class RedisController {
         return redisService.get(key);
     }
 
-    @Post
+    @Post(value = "/{key}", consumes = "text/plain")
     public String set(String key, @Body String value) {
         return redisService.set(key, value);
     }
