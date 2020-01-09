@@ -1,0 +1,9 @@
+---
+micronaut:
+  application:
+    name: redis-password-issue
+
+---
+redis:
+  uri: redis://localhost
+  password: secret
